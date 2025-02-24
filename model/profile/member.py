@@ -4,12 +4,8 @@ from dataclasses import dataclass
 from enum import Enum
 
 @dataclass
-class MemberUid:
-    uid: Uid
-
-@dataclass
 class Member:
-    uid: MemberUid
+    uid: Uid
 
     name: str
     description: str

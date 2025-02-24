@@ -5,12 +5,8 @@ from model.shared.href import Href
 from dataclasses import dataclass
 
 @dataclass
-class ProductUid:
-    uid: Uid
-
-@dataclass
 class Product:
-    uid: ProductUid
+    uid: Uid
 
     name: str
     description: str

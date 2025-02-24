@@ -5,12 +5,8 @@ from model.shared.uid import Uid
 from dataclasses import dataclass
 
 @dataclass
-class ProjectUid:
-    uid: Uid
-
-@dataclass
 class Project:
-    uid: ProjectUid
+    uid: Uid
 
     name: str
     description: str
