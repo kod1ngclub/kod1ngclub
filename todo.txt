@@ -2,6 +2,9 @@
 1. Wrapper class for only SERVICE LAYER
 2. No wrapper class for MODEL LAYER
 
+==== Commit rules
+Use only FEAT FIX DOCS CHORE BUILD
+
 ==== To do
 [v] model           - abstraction of database structure
 [ ] view            - abstraction of statically built pages
