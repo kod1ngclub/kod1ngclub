@@ -1,0 +1,17 @@
+==== Rule
+1. Wrapper class for only SERVICE LAYER
+2. No wrapper class for MODEL LAYER
+
+==== To do
+[v] model           - abstraction of database structure
+[ ] view            - abstraction of statically built pages
+[ ] service         - usecases
+[ ] repository      - domain features (maybe like, EventRepository.IsNewbie)
+[ ] template        - template engine
+[ ] util            - wrapping-layer of utility functions
+[ ] MAIN            - main component
+
+==== To decide
+[ ] what template engine to use
+[ ] what CSS framework to use
+[ ] what JS framework to use
