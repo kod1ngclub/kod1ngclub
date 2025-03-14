@@ -1,15 +1,19 @@
-from model.project.product import Product
-from model.profile.member import Member
+from model.project.product import ProductUid
+from model.member.member import MemberUid
 from model.shared.uid import Uid
 
 from dataclasses import dataclass
 
 @dataclass
+class ProjectUid:
+    data: Uid
+
+@dataclass
 class Project:
-    uid: Uid
+    uid: ProjectUid
 
     name: str
     description: str
-    projects: list[Product]
+    projects: list[ProductUid]
 
-    manager: Member
+    manager: MemberUid

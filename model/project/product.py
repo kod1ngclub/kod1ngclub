@@ -1,12 +1,16 @@
-from model.profile.member import Member
+from model.member.member import MemberUid
 from model.shared.uid import Uid
 from model.shared.href import Href
 
 from dataclasses import dataclass
 
 @dataclass
+class ProductUid:
+    data: Uid
+
+@dataclass
 class Product:
-    uid: Uid
+    uid: ProductUid
 
     name: str
     description: str
@@ -16,5 +20,5 @@ class Product:
     homepage: Href
     repository: Href
 
-    manager: Member
-    contributors: list[Member]
+    manager: MemberUid
+    contributors: list[MemberUid]
