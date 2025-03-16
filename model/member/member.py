@@ -14,7 +14,7 @@ class Member:
     uid: MemberUid
 
     name: str
-    description: str
+    bio: str
     achievements: list[AchievementUid]
 
     email: Href
